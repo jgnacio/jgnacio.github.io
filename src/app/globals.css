@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 20 14% 96%;
+    --foreground: 309 8% 17%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 309 8% 17%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 309 8% 17%;
+ 
+    --border: 282, 87%, 62%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    --primary: 282, 87%, 62%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 131, 67%, 60%;
+    --secondary-foreground: 309 8% 17%;
+ 
+    --accent: 20 14% 90%;
+    --accent-foreground: 309 8% 17%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 282, 87%, 62%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 20 14% 96%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --popover: 0 0% 4%;
+    --popover-foreground:  20 14% 96%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground:  20 14% 96%;
+ 
+    --border: 282, 87%, 62%;
+    --input: 282, 87%, 62%;
+ 
+    --primary: 282, 87%, 62%;
+    --primary-foreground:  20 14% 96%;
+ 
+    --secondary: 131, 67%, 60%;
+    --secondary-foreground:  20 14% 96%;
+ 
+    --accent: 282, 87%, 62%;
+    --accent-foreground: 20 14% 96%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 0, 0%, 12%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .title-clip {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  }
+  .title-clip-center {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  }
+  .clipped-footer {
+    background: url(https://res.cloudinary.com/dyrtfx5rl/image/upload/v1692282248/jgnacio-portfolio/videos/qhzxn1bpzdie0pd8sfht.gif);
+    background-size: cover;
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+    transform: scaleY(-1);
+  }
+}
