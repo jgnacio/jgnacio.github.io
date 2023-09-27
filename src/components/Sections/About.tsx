@@ -6,7 +6,7 @@ const zen = Zen_Dots({ subsets: ["latin"], weight: "400" });
 
 export default function About() {
   const profileImg =
-    "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1689708226/jgnacio-portfolio/profilewithoutbackground.png";
+    "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1689708226/jgnacio-portfolio/profilewbg.png";
   return (
     <Title title="About">
       <div className="flex flex-col lg:flex-row">
