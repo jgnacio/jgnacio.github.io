@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Zen_Dots } from "next/font/google";
 import DisplayTechStack from "../../components/ui/ShowContent/DisplayTechStack";
 import { SiYoutube, SiGithub } from "react-icons/si";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { ProjectsListType } from "@/types/Projects";
@@ -73,6 +74,18 @@ export default function RenderProject({
                     >
                       <SiGithub size={"2rem"} />
                     </Link>
+                  )}
+                  {project.link.website && (
+                    <div className="flex gap-2 items-center">
+                      <span>Visit the website here</span>
+                      <Link
+                        className={buttonVariants({ variant: "outline" })}
+                        target="_blank"
+                        href={project.link.website}
+                      >
+                        <FaExternalLinkAlt />
+                      </Link>
+                    </div>
                   )}
                 </div>
               </>

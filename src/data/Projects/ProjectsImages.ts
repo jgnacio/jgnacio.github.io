@@ -20,9 +20,9 @@ export const projectsImages = {
         "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1692705065/jgnacio-portfolio/proyects/gswhtxjmfiucwlofjvha.png",
     },
     jym: {
-      main: "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1692705143/jgnacio-portfolio/proyects/sk1wsamyr7tahvh9vfdh.png",
+      main: "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1711477851/jgnacio-portfolio/proyects/uiwqd5ybfx4maounlhnf.jpg",
       backgroundUrl:
-        "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1692705143/jgnacio-portfolio/proyects/sk1wsamyr7tahvh9vfdh.png",
+        "https://res.cloudinary.com/dyrtfx5rl/image/upload/v1711477851/jgnacio-portfolio/proyects/uiwqd5ybfx4maounlhnf.jpg",
     },
   };
 

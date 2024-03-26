@@ -26,6 +26,37 @@ import { keyGenerator } from "@/lib/keyGenerator";
 
 export const projects: ProjectsListType = [
   {
+    title: "JYM Dulces creaciones (E-learning)",
+    comingSoon: false,
+    description:
+      "JYM Dulces Creaciones es una plataforma dedicada a impartir cursos en línea de decoración de tortas, creación de muñecos de azúcar y realización de galletas con diversas formas y decoraciones. Como parte del equipo de desarrollo, tuve el privilegio de liderar el proyecto de creación de una plataforma educativa en línea para ofrecer cursos prácticos de repostería desde la comodidad del hogar.",
+    link: {
+      website: "https://jymdulcescreaciones.com/",
+    },
+    image: {
+      src: projectsImages.jym.main,
+      backgroundUrl: projectsImages.jym.backgroundUrl,
+      alt: "Casmabil project e-commerce website",
+    },
+    techStack: {
+      frontend: [
+        <SiNextdotjs key={keyGenerator()} />,
+        <SiTypescript key={keyGenerator()} />,
+        <SiTailwindcss key={keyGenerator()} />,
+        <SiDaisyui key={keyGenerator()} />,
+        <SiMui key={keyGenerator()} />,
+      ],
+      backend: [
+        <SiMysql key={keyGenerator()} />,
+        <SiPrisma key={keyGenerator()} />,
+      ],
+      deployment: [
+        <SiDocker key={keyGenerator()} />,
+        <SiGooglecloud key={keyGenerator()} />,
+      ],
+    },
+  },
+  {
     title: "Machine Learning Operations (MLOps) Challenge",
     description:
       "The challenge is to train, register a model using MLflow with Azure Machine Learning followed by implementing the trained model in a real-time endpoint so that it can be consumed by a web application.",
@@ -123,34 +154,6 @@ export const projects: ProjectsListType = [
       deployment: [
         <SiDocker key={keyGenerator()} />,
         <SiMicrosoftazure key={keyGenerator()} />,
-      ],
-    },
-  },
-  {
-    title: "JYM Dulces creaciones (E-learning)",
-    comingSoon: true,
-    description:
-      "JYM Dulces creaciones is an user-friendly web application for a local business built with modern technologies. It is currently under development.",
-    image: {
-      src: projectsImages.jym.main,
-      backgroundUrl: projectsImages.jym.backgroundUrl,
-      alt: "Casmabil project e-commerce website",
-    },
-    techStack: {
-      frontend: [
-        <SiNextdotjs key={keyGenerator()} />,
-        <SiTypescript key={keyGenerator()} />,
-        <SiTailwindcss key={keyGenerator()} />,
-        <SiDaisyui key={keyGenerator()} />,
-        <SiMui key={keyGenerator()} />,
-      ],
-      backend: [
-        <SiMysql key={keyGenerator()} />,
-        <SiPrisma key={keyGenerator()} />,
-      ],
-      deployment: [
-        <SiDocker key={keyGenerator()} />,
-        <SiGooglecloud key={keyGenerator()} />,
       ],
     },
   },

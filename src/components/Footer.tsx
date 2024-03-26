@@ -9,6 +9,9 @@ import { ContactForm } from "./Contact/ContactForm";
 const zen = Zen_Dots({ subsets: ["latin"], weight: "400" });
 
 export default function Footer() {
+  const now: Date = new Date();
+  const currentYear: number = now.getFullYear();
+
   return (
     <footer className="flex flex-col lg:flex-row-reverse p-4 w-full h-[40vh] md:h-[55vh] border-t">
       <div className="flex items-center justify-center w-full h-full">
@@ -19,7 +22,7 @@ export default function Footer() {
           <SocialPages />
         </div>
 
-        <small>&copy; Copyright 2023, Ignacio Gómez</small>
+        <small>&copy; Copyright {currentYear}, Ignacio Gómez</small>
       </div>
     </footer>
   );
