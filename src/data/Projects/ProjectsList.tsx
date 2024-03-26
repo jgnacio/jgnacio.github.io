@@ -29,7 +29,7 @@ export const projects: ProjectsListType = [
     title: "JYM Dulces creaciones (E-learning)",
     comingSoon: false,
     description:
-      "JYM Dulces Creaciones es una plataforma dedicada a impartir cursos en línea de decoración de tortas, creación de muñecos de azúcar y realización de galletas con diversas formas y decoraciones. Como parte del equipo de desarrollo, tuve el privilegio de liderar el proyecto de creación de una plataforma educativa en línea para ofrecer cursos prácticos de repostería desde la comodidad del hogar.",
+      "JYM Dulces Creaciones is a platform dedicated to providing online courses in cake decorating, sugar doll creation and cookie making with various shapes and decorations. As part of the development team, I had the privilege of leading the project of creating an online educational platform to offer practical baking courses from the comfort of home.",
     link: {
       website: "https://jymdulcescreaciones.com/",
     },
