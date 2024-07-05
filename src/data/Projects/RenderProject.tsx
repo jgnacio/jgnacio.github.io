@@ -77,7 +77,7 @@ export default function RenderProject({
                   )}
                   {project.link.website && (
                     <div className="flex gap-2 items-center">
-                      <span>Visit the website here</span>
+                      <span>Visit the website here.</span>
                       <Link
                         className={buttonVariants({ variant: "outline" })}
                         target="_blank"
