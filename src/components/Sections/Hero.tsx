@@ -27,13 +27,6 @@ export default function Hero() {
   }, []);
   return (
     <div className="flex relative justify-center items-center min-h-[90vh]">
-      <Image
-        src="https://res.cloudinary.com/dyrtfx5rl/image/upload/v1692282248/jgnacio-portfolio/videos/qhzxn1bpzdie0pd8sfht.gif"
-        alt="video background of Ignacio Gómez proyects"
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
-        className="absolute -z-10 grayscale opacity-25"
-      />
       <h1
         className={`text-3xl px-4 md:px-0 font-bold ${zen.className}`}
         ref={heroTextDisplay}
